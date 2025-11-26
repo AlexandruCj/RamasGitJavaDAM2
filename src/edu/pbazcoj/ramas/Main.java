@@ -18,5 +18,6 @@ public class Main {
         System.out.println("Números principales: " + bolas);
         int complementario = r.nextInt(49) + 1;
         System.out.println("Complementario: " + complementario);
+        System.out.println("Cambio realizado desde GitHub");
     }
 }
