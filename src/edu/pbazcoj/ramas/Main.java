@@ -10,6 +10,8 @@ public class Main {
         Random r = new Random();
         while (bolas.size() < 5) {
             bolas.add(r.nextInt(49) + 1);
+            int suma = bolas.stream().mapToInt(Integer::intValue).sum();
+            System.out.println("Suma de principales: " + suma);
         }
         System.out.println("Números principales: " + bolas);
         int complementario = r.nextInt(49) + 1;
