@@ -8,6 +8,7 @@ public class Main {
         // Lotería Primitiva: 5 números principales (1..49) + 1 complementario
         HashSet<Integer> bolas = new HashSet<>();
         Random r = new Random();
+        System.out.println("¡Que tengas uerte en el sorteo, DAM!");
         while (bolas.size() < 5) {
             bolas.add(r.nextInt(49) + 1);
             int suma = bolas.stream().mapToInt(Integer::intValue).sum();
